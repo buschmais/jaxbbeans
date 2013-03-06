@@ -27,7 +27,7 @@ limitations under the License.
 
 	<url>https://github.com/buschmais/jaxbbeans</url>
 	<description>
-       JAXBBeans integrates JAXB and with Contexts and Dependency Injection (JSR-299).
+      CDI (JSR299) extension which enables injection of JAXBContext instances.
     </description>
 
 	<organization>
