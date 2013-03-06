@@ -1,4 +1,4 @@
-package com.buschmais.cdi.jaxbbeans.test.schema;
+package com.buschmais.cdi.jaxbbeans.test;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

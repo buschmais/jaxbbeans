@@ -1,4 +1,4 @@
-package com.buschmais.cdi.jaxbbeans.test.schema;
+package com.buschmais.cdi.jaxbbeans.test;
 
 import java.io.StringReader;
 import java.io.StringWriter;

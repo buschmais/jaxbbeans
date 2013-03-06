@@ -8,7 +8,6 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.buschmais.cdi.jaxbbeans.test.schema.Codec;
 import com.buschmais.jaxbbeans.extension.JAXBContextExtension;
 import com.buschmais.jaxbbeans.test.schema.sample.Root;
 

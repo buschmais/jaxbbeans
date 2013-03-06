@@ -26,9 +26,7 @@ limitations under the License.
 
 
 	<url>https://github.com/buschmais/jaxbbeans</url>
-	<description>
-      CDI (JSR299) extension which enables injection of JAXBContext instances.
-    </description>
+	<description>CDI (JSR299) extension which enables injection of JAXBContext instances.</description>
 
 	<organization>
 		<name>buschmais GbR</name>
