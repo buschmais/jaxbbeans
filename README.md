@@ -1,4 +1,4 @@
-jaxbbeans
+JAXBbeans
 =========
 
-CDI (JSR299) extension which enables injection of JAXBContext instances.
+For usage information refer to https://github.com/buschmais/testbeans/wiki/TestBeans. 
