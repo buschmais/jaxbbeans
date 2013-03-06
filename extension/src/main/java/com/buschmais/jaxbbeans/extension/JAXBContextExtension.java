@@ -17,17 +17,43 @@ import org.slf4j.LoggerFactory;
 
 import com.buschmais.jaxbbeans.JAXBClasses;
 
+/**
+ * CDI extension which detects injection points for {@link JAXBContext}
+ * instances and creates the corresponding beans.
+ * 
+ * @author dirk.mahler
+ */
 public class JAXBContextExtension implements Extension {
 
+	/**
+	 * The logger.
+	 */
 	private static final org.slf4j.Logger LOGGER = LoggerFactory
 			.getLogger(JAXBContextExtension.class);
 
+	/**
+	 * Holds the detected qualifier annotations and the classes to used for
+	 * creating the corresponding {@link JAXBContext}s.
+	 */
 	private final Map<Annotation, Class<?>[]> qualifiers = new HashMap<Annotation, Class<?>[]>();
 
+	/**
+	 * Constructor.
+	 */
 	public JAXBContextExtension() {
 		LOGGER.info("Created " + this.getClass().getSimpleName());
 	}
 
+	/**
+	 * Processes a injection target.
+	 * <p>
+	 * Scans the injection target for injection points of type
+	 * {@link JAXBContext} and evaluates the provided qualifier annotations for
+	 * the presence of {@link JAXBClasses}.
+	 * 
+	 * @param pit
+	 *            The {@link ProcessInjectionTarget} fired by the container.
+	 */
 	public void processInjectionTarget(@Observes ProcessInjectionTarget<?> pit) {
 		for (InjectionPoint injectionPoint : pit.getInjectionTarget()
 				.getInjectionPoints()) {
@@ -47,6 +73,13 @@ public class JAXBContextExtension implements Extension {
 		}
 	}
 
+	/**
+	 * Creates the {@link JAXBContext} beans from the information collected
+	 * during {@link #processInjectionTarget(ProcessInjectionTarget)}.
+	 * 
+	 * @param afterBeanDiscovery
+	 *            The {@link AfterBeanDiscovery} fired by the container.
+	 */
 	void afterBeanDiscovery(@Observes AfterBeanDiscovery afterBeanDiscovery) {
 		for (Entry<Annotation, Class<?>[]> entry : qualifiers.entrySet()) {
 			Bean<?> jaxbContextBean = new JAXBContextBean(entry.getKey(),

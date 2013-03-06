@@ -8,6 +8,11 @@ import javax.inject.Qualifier;
 import com.buschmais.jaxbbeans.JAXBClasses;
 import com.buschmais.jaxbbeans.test.schema.sample.ObjectFactory;
 
+/**
+ * Sample qualifier carrying the {@link JAXBClasses} meta annotation.
+ * 
+ * @author dirk.mahler
+ */
 @Qualifier
 @JAXBClasses(ObjectFactory.class)
 @Retention(RetentionPolicy.RUNTIME)
