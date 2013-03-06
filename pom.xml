@@ -79,14 +79,17 @@ limitations under the License.
 		</repository>
 	</repositories>
 
-	<pluginRepositories>
-		<pluginRepository>
-			<id>buschmais-releases-repository</id>
-			<name>buschmais releases repository</name>
-			<url>http://repository.buschmais.com/releases</url>
-		</pluginRepository>
-	</pluginRepositories>
-
+	<distributionManagement>
+		<repository>
+			<id>nexus</id>
+			<url>http://nexus.buschmais.com/content/repositories/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus</id>
+			<url>http://nexus.buschmais.com/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+	
 	<build>
 		<pluginManagement>
 			<plugins>
