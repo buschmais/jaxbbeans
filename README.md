@@ -1,4 +1,4 @@
 JAXBbeans
 =========
 
-For usage information refer to https://github.com/buschmais/testbeans/wiki/TestBeans. 
+For usage information refer to https://github.com/buschmais/jaxbbeans/wiki/JAXBbeans. 
