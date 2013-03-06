@@ -24,7 +24,7 @@ limitations under the License.
 	</parent>
 	<artifactId>jaxbbeans.extension</artifactId>
 
-	<name>${groupId}.${artifactId}</name>
+	<name>${project.groupId}.${project.artifactId}</name>
 
 	<dependencies>
 		<dependency>
