@@ -19,10 +19,9 @@ limitations under the License.
 	<groupId>com.buschmais.jaxbbeans</groupId>
 	<artifactId>jaxbbeans</artifactId>
 	<packaging>pom</packaging>
-	<version>1.1.0-SNAPSHOT</version>
+	<version>1.0.0-SNAPSHOT</version>
 
 	<name>${project.groupId}.${project.artifactId}</name>
-
 
 	<url>https://github.com/buschmais/jaxbbeans</url>
 	<description>CDI (JSR299) extension which enables injection of JAXBContext instances.</description>
