@@ -55,10 +55,9 @@ limitations under the License.
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<javax.enterprise.version>1.0</javax.enterprise.version>
-		<org.apache.openwebbeans.version>1.1.2</org.apache.openwebbeans.version>
-		<org.jboss.weld.se.version>1.1.2.Final</org.jboss.weld.se.version>
-		<org.slf4j.version>1.5.10</org.slf4j.version>
+		<javax.enterprise.version>1.0-SP4</javax.enterprise.version>
+		<org.jboss.weld.se.version>1.1.9.Final</org.jboss.weld.se.version>
+		<org.slf4j.version>1.6.1</org.slf4j.version>
 		<junit.version>4.11</junit.version>
 	</properties>
 
@@ -81,7 +80,6 @@ limitations under the License.
 	</repositories>
 
 	<pluginRepositories>
-		<!-- buschmais -->
 		<pluginRepository>
 			<id>buschmais-releases-repository</id>
 			<name>buschmais releases repository</name>
@@ -95,7 +93,7 @@ limitations under the License.
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-compiler-plugin</artifactId>
-					<version>2.3.2</version>
+					<version>3.0</version>
 					<configuration>
 						<source>1.6</source>
 						<target>1.6</target>
@@ -103,11 +101,6 @@ limitations under the License.
 						<showDeprecation>true</showDeprecation>
 						<showWarnings>true</showWarnings>
 					</configuration>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-checkstyle-plugin</artifactId>
-					<version>2.6</version>
 				</plugin>
 				<plugin>
 					<groupId>org.jvnet.jaxb2.maven2</groupId>
